@@ -1,0 +1,52 @@
+# canonical predicate<TAB>equivalent spatial phrases; longer phrases match first
+left	left of|to the left of|on the left side of|left
+right	right of|to the right of|on the right side of|right
+above	above
+below	below
+front	in front of|ahead of|front of
+behind	behind|in back of|at the back of
+beside	beside|next to|adjacent to|alongside|adjacent
+near	near|nearby|close to|proximity to|close
+far	far from|far away from|distant from
+in	in|inside|within|into
+on	on top of|on|onto|upon
+under	under|underneath|beneath
+over	over
+between	between
+among	among|amid|amidst
+around	around
+along	along
+across	across
+through	through
+opposite	opposite|across from
+parallel	parallel to|parallel with|parallel
+perpendicular	perpendicular to|perpendicular
+at	at
+from	from
+to	to
+toward	toward|towards
+away	away from
+surround	surround|encircle|surround by|surrounded by|encircled by
+border	border|border by|bordered by|flank|flank by|flanked by|adjoin|abut
+connected	connect to|connected to|attach to|attached to|join|link to|linked to
+intersect	intersect|cross
+span	span|straddle
+overlap	overlap|overlapping
+touch	touch|touching
+center	center of|centre of|middle of
+edge	edge of|border of
+corner	corner of
+north	north of|north
+south	south of|south
+east	east of|east
+west	west of|west
+surrounded_by	surrounded by|encircled by
+bordered_by	bordered by|flanked by
+upper-left	upper-left of|upper left of
+upper-right	upper-right of|upper right of
+lower-left	lower-left of|lower left of
+lower-right	lower-right of|lower right of
+above-left	above-left of|above left of
+above-right	above-right of|above right of
+below-left	below-left of|below left of
+below-right	below-right of|below right of

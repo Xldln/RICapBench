@@ -1,0 +1,17 @@
+assets/
+__pycache__/
+*.py[cod]
+outputs/
+.vscode/
+third_party/
+.cache/
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+
+
+tests
+__pycache__
+
+*.pyc

@@ -1,0 +1,48 @@
+# kind<TAB>predicate<TAB>inverse (for inverse rows)
+inverse	left	right
+inverse	above	below
+inverse	front	behind
+inverse	north	south
+inverse	east	west
+symmetric	near
+symmetric	far
+symmetric	beside
+symmetric	opposite
+symmetric	parallel
+symmetric	perpendicular
+symmetric	intersect
+symmetric	overlap
+symmetric	touch
+symmetric	connected
+inverse	surround	surrounded_by
+inverse	border	bordered_by
+inverse	upper-left	lower-right
+inverse	upper-right	lower-left
+alias	above-left	upper-left
+alias	above-right	upper-right
+alias	below-left	lower-left
+alias	below-right	lower-right
+alias	nearby	near
+alias	within	in
+alias	alongside	beside
+alias	spanning	span
+alias	left_of	left
+alias	left of	left
+alias	right_of	right
+alias	right of	right
+alias	upper_left	upper-left
+alias	upper_right	upper-right
+alias	lower_left	lower-left
+alias	lower_right	lower-right
+alias	above_left	upper-left
+alias	above_right	upper-right
+alias	below_left	lower-left
+alias	below_right	lower-right
+alias	upper left	upper-left
+alias	upper right	upper-right
+alias	lower left	lower-left
+alias	lower right	lower-right
+alias	above left	upper-left
+alias	above right	upper-right
+alias	below left	lower-left
+alias	below right	lower-right

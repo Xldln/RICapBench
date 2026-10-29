@@ -1,0 +1,43 @@
+ENV:
+  ROOT_IMAGE_DIR: /path/to/RICapBench
+  NPROC_PER_NODE: '2'
+  PYTORCH_CUDA_ALLOC_CONF: expandable_segments:True
+  MODELSCOPE_CACHE: /path/to/modelscope-cache
+  WANDB_PROJECT: RICapBench
+
+model: /path/to/weights/InternVL3_5-2B-HF
+dataset: /path/to/RICapBench/train.jsonl
+val_dataset: /path/to/RICapBench/val.jsonl
+output_dir: ./outputs/InternVL3.5-2B
+run_name: InternVL3.5-2B
+
+tuner_type: lora
+new_special_tokens: /path/to/special_tokens.txt
+lora_rank: 16
+lora_alpha: 64
+target_modules: all-linear
+modules_to_save: [embed_tokens, lm_head]
+freeze_vit: false
+freeze_aligner: false
+
+torch_dtype: bfloat16
+num_train_epochs: 10
+learning_rate: 1e-4
+per_device_train_batch_size: 2
+per_device_eval_batch_size: 2
+gradient_accumulation_steps: 4
+gradient_checkpointing: true
+attn_impl: flash_attn
+padding_free: true
+packing: true
+max_length: 8192
+warmup_ratio: 0.05
+dataset_num_proc: 4
+load_from_cache_file: true
+dataloader_num_workers: 4
+
+eval_strategy: epoch
+save_strategy: epoch
+save_total_limit: 2
+logging_steps: 2
+report_to: [tensorboard, wandb]

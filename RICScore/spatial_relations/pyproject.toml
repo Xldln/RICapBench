@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drc-spatial-relations"
+version = "0.1.0"
+description = "Category-anchored spatial relation extraction from English captions"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+drc-spatial-relations = "spatial_relations.parser:main"
+
+[tool.setuptools]
+packages = ["spatial_relations"]
+package-dir = {spatial_relations = "."}
+
+[tool.setuptools.package-data]
+spatial_relations = ["SpatialRelationParser.java", "RICRelationScorer.java", "spatial_predicates.tsv", "fact_equivalence.tsv", "object_landmarks.txt", "semantic_similarity_categories.json"]
