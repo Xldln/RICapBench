@@ -1,4 +1,4 @@
-# RICapBench: Benchmarking Fine-Grained Visual Understanding of Vision-Language Models in Remote Sensing
+# RICapBench: A Fine-Grained Visual Understanding Benchmark Dataset for Vision-Language Models in Remote Sensing
 
 🤗 Hugging Face (coming soon) · [<img src="img/modelscope.ico" width="20" height="20" alt="ModelScope logo"> ModelScope](https://modelscope.cn/datasets/yyyy12306/RICapBench)
 
