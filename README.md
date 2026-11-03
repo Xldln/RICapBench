@@ -1,6 +1,6 @@
 # RICapBench: A Fine-Grained Visual Understanding Benchmark Dataset for Vision-Language Models in Remote Sensing
 
-🤗 Hugging Face (coming soon) · [<img src="img/modelscope.ico" width="20" height="20" alt="ModelScope logo"> ModelScope](https://modelscope.cn/datasets/yyyy12306/RICapBench)
+[🤗 Hugging Face](https://huggingface.co/datasets/yubinux/RICapBench) · [<img src="img/modelscope.ico" width="20" height="20" alt="ModelScope logo"> ModelScope](https://modelscope.cn/datasets/yyyy12306/RICapBench)
 
 ## Overview
 
@@ -15,6 +15,25 @@ For the evaluation data format and prediction examples, see the [RICScore input 
 ## Fine-Tuning Configurations
 
 Use the configurations in [`ms-swift-sft-yaml/`](ms-swift-sft-yaml/) with [ms-swift](https://github.com/modelscope/ms-swift) for fine-tuning.
+
+Clone and install ms-swift from source. Run the following commands from the RICapBench repository root:
+
+```bash
+git clone https://github.com/modelscope/ms-swift.git
+cd ms-swift
+pip install -e .
+cd ..
+```
+
+Choose the YAML file for your model and replace the `/path/to/...` placeholders with your local model, dataset, image, cache, and special-token paths. Adjust `ENV.NPROC_PER_NODE` and the batch size for your available GPUs. The configurations use FlashAttention and log to TensorBoard and Weights & Biases; install the corresponding dependencies and configure logging before training.
+
+For example, fine-tune Qwen3-VL-2B-Instruct from the RICapBench repository root:
+
+```bash
+swift sft ms-swift-sft-yaml/Qwen3-VL-2B-Instruct.yaml
+```
+
+See the [ms-swift documentation](https://swift.readthedocs.io/en/latest/) for environment requirements and model-specific dependencies.
 
 ## Inference
 
