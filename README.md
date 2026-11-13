@@ -6,11 +6,19 @@
 
 RICapBench evaluates fine-grained visual understanding in remote sensing imagery through instance detection, object-level captioning, and spatial relations. This repository provides model-specific fine-tuning configurations, inference scripts, and the RICScore evaluation toolkit.
 
+![Relational instance captioning examples in remote sensing images, with oriented bounding boxes, object categories, captions, and spatial context.](img/figure1.png)
+
+*Relational instance captioning in RICapBench. Each instance is localized with an oriented bounding box and described with its appearance and relevant spatial context. The token sequence illustrates the structured output format.*
+
 ## 🗂️ Dataset
 
 The dataset is available on [Hugging Face](https://huggingface.co/datasets/yubinux/RICapBench) and [ModelScope](https://modelscope.cn/datasets/yyyy12306/RICapBench).
 
 For the evaluation data format and prediction examples, see the [RICScore input documentation](RICScore/README.md#input).
+
+![Pipeline for generating instance captions from visual and text prompts and constructing the spatial relation parser through human verification and LLM-assisted review.](img/figure2.png)
+
+*Caption generation and spatial relation parser construction. Visual context and object metadata guide instance caption generation; human verification and LLM-assisted review refine parsing rules for extracting spatial relation tuples.*
 
 ## 🛠️ Fine-Tuning Configurations
 
