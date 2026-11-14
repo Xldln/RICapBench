@@ -1,6 +1,6 @@
 # RICapBench: A Fine-Grained Visual Understanding Benchmark Dataset for Vision-Language Models in Remote Sensing
 
-[🤗 Hugging Face](https://huggingface.co/datasets/yubinux/RICapBench) · [<img src="img/modelscope.ico" width="20" height="20" alt="ModelScope logo"> ModelScope](https://modelscope.cn/datasets/yyyy12306/RICapBench)
+[📄 arXiv](https://arxiv.org/abs/2611.16413) · [🤗 Hugging Face](https://huggingface.co/datasets/yubinux/RICapBench) · [<img src="img/modelscope.ico" width="20" height="20" alt="ModelScope logo"> ModelScope](https://modelscope.cn/datasets/yyyy12306/RICapBench)
 
 ## 🌏 Overview
 
