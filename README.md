@@ -53,7 +53,19 @@ RICScore combines instance detection accuracy, caption quality, and spatial rela
 
 ## Citation
 
-Citation information will be added when publication details are available.
+If you use RICapBench in your research, please cite our paper:
+
+```bibtex
+@misc{wang2026ricapbench,
+  title = {{RICapBench}: A Fine-Grained Visual Understanding Benchmark Dataset for Vision-Language Models in Remote Sensing},
+  author = {Xue Wang and Yubin Xu and Kun Tan},
+  year = {2026},
+  eprint = {2611.16413},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  url = {https://arxiv.org/abs/2611.16413}
+}
+```
 
 ## Acknowledgements
 
